@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-ng-app';
+  numbers=[]
+  changeTitle(){
+    this.title="Welcome to angular 12"
+  }
 }
