@@ -1,1 +1,8 @@
-<p>products-search works!</p>
+<div class="container">
+    <div class="row height d-flex justify-content-center align-items-center">
+        <div class="col-md-8">
+            <!-- <div class="search"> <input type="text" [value]="filterText" (change)="changeFilterText(ftxt.value)" #ftxt class="form-control" placeholder="Search the products">  </div> -->
+            <div class="search"> <input type="text" [value]="filterText" (keyup)="onfilterTextChanged(ftxt.value)" #ftxt class="form-control" placeholder="Search the products">  </div>
+        </div>
+    </div>
+</div>

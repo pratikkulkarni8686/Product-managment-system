@@ -5,13 +5,15 @@ import { FormsModule } from '@angular/forms';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { ProductsSearchComponent } from './components/products-search/products-search.component';
+import { StarComponent } from './components/star/star.component';
 
 @NgModule({
   declarations: [
     ProductListComponent,
     FilterPipe,
     ProductsSearchComponent,
-    ProductsSearchComponent
+    ProductsSearchComponent,
+    StarComponent
   ],
   imports: [
     CommonModule,
