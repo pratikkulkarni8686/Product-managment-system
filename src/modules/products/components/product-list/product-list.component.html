@@ -9,10 +9,10 @@
                     <p class="card-text">{{product.description}}</p>
                     <p class="card-text">{{product.price|currency:'INR'}}</p>
                     <p class="card-text">
-                        <app-star [likesValue]='product.rating'>
+                        <app-star [ratingValue]='product.rating'>
                         </app-star>
                     </p>
-                    <a href="#" class="btn btn-danger">Delete</a>
+                    <a  class="btn btn-danger" (click)="removeProducts(product.productId)">Delete</a>
                 </div>
             </div>
         </div>
@@ -21,6 +21,8 @@
 
 <ng-template #alternative>
     <div>
-        No products to display
+        <h3>
+            No products to display
+        </h3>
     </div>
 </ng-template>
