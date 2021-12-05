@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AddProductComponent } from './components/add-product/add-product.component';
 import { ViewProductComponent } from './components/view-product/view-product.component';
 import { UpdateProductComponent } from './components/update-product/update-product.component';
+import { ProductsService } from './services/products.service';
+import { AppService } from '../shared/models/service.models';
 
 @NgModule({
   declarations: [
@@ -22,16 +24,11 @@ import { UpdateProductComponent } from './components/update-product/update-produ
     StarComponent,
     AddProductComponent,
     ViewProductComponent,
-    UpdateProductComponent
+    UpdateProductComponent,
   ],
-  imports: [
-    CommonModule,
-    FormsModule,
-    HttpClientModule,
-    ProductsRoutingModule
-  ],
+  imports: [CommonModule, FormsModule, HttpClientModule, ProductsRoutingModule],
   exports: [ProductListComponent],
-  providers: [],
-  bootstrap: [ProductListComponent]
+  providers: [{ provide: AppService, useClass: ProductsService }],
+  bootstrap: [ProductListComponent],
 })
-export class ProductsModule { }
+export class ProductsModule {}

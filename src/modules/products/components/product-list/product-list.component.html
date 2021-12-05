@@ -3,16 +3,18 @@
     <div class="card-flex">
         <div *ngFor="let product of products|search:listFilterText">
             <div class="card prod-card" style="width: 280px;">
-                <img class="card-img-top prod-img" src={{product.imagePath}} alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">{{product.name|uppercase}}</h5>
+                <a [routerLink]="['/products/view',product.productId]">
+                    <img class="card-img-top prod-img" src={{product.imagePath}} alt="Card image cap">
+                </a>
+                <div class="card-body prod-body">
+                    <h5 class="card-title prod-name">{{product.name|uppercase}}</h5>
                     <p class="card-text">{{product.description}}</p>
                     <p class="card-text">{{product.price|currency:'INR'}}</p>
                     <p class="card-text">
                         <app-star [ratingValue]='product.rating'>
                         </app-star>
                     </p>
-                    <a  class="btn btn-danger" (click)="removeProducts(product.productId)">Delete</a>
+                    <a class="btn btn-danger" (click)="deleteProduct(product.productId)">Delete</a>
                 </div>
             </div>
         </div>

@@ -1,12 +1,12 @@
-import {NgModule} from "@angular/core";
-import {RouterModule} from "@angular/router";
-import { sharedRoutes } from "./shared.routes";
+// import {NgModule} from "@angular/core";
+// import {RouterModule} from "@angular/router";
+// import { sharedRoutes } from "./shared.routes";
 
-@NgModule({
-    imports: [RouterModule.forRoot(sharedRoutes)],
-    exports:[RouterModule]
-})
+// @NgModule({
+//     imports: [RouterModule.forRoot(sharedRoutes)],
+//     exports:[RouterModule]
+// })
 
-export class SharedRouteModule {
+// export class SharedRouteModule {
     
-}
+// }

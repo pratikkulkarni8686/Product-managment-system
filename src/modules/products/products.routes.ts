@@ -6,19 +6,19 @@ import { ViewProductComponent } from "./components/view-product/view-product.com
 
 export const productRoutes: Routes = [
     {
-        path: 'products',
+        path: '',
         component: ProductListComponent
     },
     {
-        path: 'products/view/:id',
+        path: 'view/:id',
         component: ViewProductComponent
     },
     {
-        path: 'products/update/:id',
+        path: 'update/:id',
         component: UpdateProductComponent
     },
     {
-        path: 'products/add',
+        path: 'add',
         component: AddProductComponent
     }
 ]

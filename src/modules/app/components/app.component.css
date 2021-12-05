@@ -1,0 +1,22 @@
+.foot{
+    margin: 0;
+    padding-top: 15px;
+    background-color: #1e1e1e;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+}
+
+.copyright h6{
+    padding-bottom: 0 !important;
+    margin-bottom: 0;
+}
+
+.copyright h6 span{
+    color: orange;
+}

@@ -9,5 +9,15 @@
 
 .prod-card{
     margin: 20px 20px;
+    box-shadow: 2px 2px 12px rgb(0 0 0 / 30%);
 }
+
+.prod-name{
+    font-family: 'Kanit', sans-serif;
+}
+
+/* .prod-body{
+    color: #999999;
+    background-color: #1e1e1e
+} */
 

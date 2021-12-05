@@ -1,1 +1,5 @@
-<p>view-product works!</p>
+<p *ngIf=productInfo>
+    {{productInfo.name}}
+</p>
+
+<input type="submit" value="Go Back" (click)="goBack()">
